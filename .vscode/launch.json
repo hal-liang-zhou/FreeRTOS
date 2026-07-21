@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "rtos": {
+        "type": "FreeRTOS",
+        "enabled": true
+    },
+    "configurations": [
+        {
+            "executable": "${workspaceRoot}/bin/PriorityFlip.elf",
+            "name": "_DEBUG_",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "jlink",
+            "device": "STM32F103ZE",
+            "showDevDebugOutput": "raw",
+            "interface": "swd",
+            "serverpath": "D:/Software/Jlink/JLinkGDBServerCL.exe",
+            "armToolchainPath": "D:/Software/MY_ToolChains/Gcc/bin",
+            "gdbPath": "D:/Software/MY_ToolChains/Gcc/bin/arm-none-eabi-gdb.exe",
+            "svdPath": "./STM32F103xx.svd",
+            "objdumpPath": "D:/Software/MY_ToolChains/Gcc/bin/arm-none-eabi-objdump.exe",
+            "serverArgs": [
+                "-speed",
+                "1000",
+                "-nogui",
+                "-singlerun",
+                "-nogui",
+            ],
+            "rttConfig": {
+                "enabled": true,
+                "address": "auto",
+                "decoders": [
+                    {
+                        "label": "Console Output",
+                        "port": 0,
+                        "type": "console"
+                    }
+                ]
+            }
+        }
+    ]
+}
