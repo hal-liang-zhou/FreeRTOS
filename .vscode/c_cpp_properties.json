@@ -1,0 +1,29 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "${workspaceFolder}/User/Inc",
+                "${workspaceFolder}/Infras/Interface/Inc",
+                "${workspaceFolder}/Infras/Mcal/Inc",
+                "${workspaceFolder}/Lib/Std/CMSIS/CM3/CoreSupport",
+                "${workspaceFolder}/Lib/Std/CMSIS/CM3/DeviceSupport",
+                "${workspaceFolder}/Lib/Std/STM32F10x_StdPeriph_Driver/inc",
+                "${workspaceFolder}/Infras/Os/include",
+                "${workspaceFolder}/Infras/Os",
+                "${workspaceFolder}/Infras/Os/portable/GCC/ARM_CM3",
+                "${workspaceFolder}/Lib/Std/CMSIS/CM3/DeviceSupport/ST/STM32F10x",
+                "${workspaceFolder}/Lib/Std/CMSIS/CM3/DeviceSupport/ST/STM32F10x",
+                "${workspaceFolder}/Infras/Debug/Inc"
+            ],
+            "defines": [
+                "USE_STDPERIPH_DRIVER",
+                "STM32F10X_HD"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
