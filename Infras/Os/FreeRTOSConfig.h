@@ -84,6 +84,9 @@
 #define configUSE_NEWLIB_REENTRANT           0
 #define configUSE_CO_ROUTINES                0
 
+#define configPRE_SLEEP_PROCESSING(x)        (x) = 0
+#define configPOST_SLEEP_PROCESSING(x)       ((void)(x))
+
 /* Constants provided for debugging and optimisation assistance. */
 #define configCHECK_FOR_STACK_OVERFLOW       0
 #define configQUEUE_REGISTRY_SIZE            0
